@@ -403,6 +403,15 @@ ifdef CONFIG_BIGNUM
 	./qjs --bignum tests/test_op_overloading.js
 	./qjs --bignum tests/test_bignum.js
 	./qjs --qjscalc tests/test_qjscalc.js
+	./qjs --bignum tests/bignum/test_acos.js
+	./qjs --bignum tests/bignum/test_asin.js
+	./qjs --bignum tests/bignum/test_cos.js
+	./qjs --bignum tests/bignum/test_exp.js
+	./qjs --bignum tests/bignum/test_log.js
+	./qjs --bignum tests/bignum/test_pow.js
+	./qjs --bignum tests/bignum/test_sin.js
+	./qjs --bignum tests/bignum/test_sqrt.js
+	./qjs --bignum tests/bignum/test_tan.js
 endif
 ifdef CONFIG_M32
 	./qjs32 tests/test_closure.js
@@ -415,6 +424,15 @@ ifdef CONFIG_BIGNUM
 	./qjs32 --bignum tests/test_op_overloading.js
 	./qjs32 --bignum tests/test_bignum.js
 	./qjs32 --qjscalc tests/test_qjscalc.js
+	./qjs32 --bignum tests/bignum/test_acos.js
+	./qjs32 --bignum tests/bignum/test_asin.js
+	./qjs32 --bignum tests/bignum/test_cos.js
+	./qjs32 --bignum tests/bignum/test_exp.js
+	./qjs32 --bignum tests/bignum/test_log.js
+	./qjs32 --bignum tests/bignum/test_pow.js
+	./qjs32 --bignum tests/bignum/test_sin.js
+	./qjs32 --bignum tests/bignum/test_sqrt.js
+	./qjs32 --bignum tests/bignum/test_tan.js
 endif
 endif
 
