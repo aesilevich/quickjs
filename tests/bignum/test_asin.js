@@ -10,11 +10,11 @@ const data = [
 ]
 
 
-test_data(data, "asin", 1, BigFloat("0"), function(k, args) {
+test_data(data, "asin", 1, 400, BigFloat("10.0"), function(k, args) {
     return BigFloat.asin(args[0])
 })
 
 
-test_data(data, "asin_neg", 1, BigFloat("0"), function(k, args) {
+test_data(data, "asin_neg", 1, 400, BigFloat("10.0"), function(k, args) {
     return -BigFloat.asin(-args[0])
 })

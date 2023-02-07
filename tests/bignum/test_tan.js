@@ -506,10 +506,10 @@ const data = [
 ]
 
 
-test_data(data, "tan", 1, BigFloat("0"), function(k, args) {
+test_data(data, "tan", 1, 300, BigFloat("1.0"), function(k, args) {
     return BigFloat.tan(args[0])
 })
 
-test_data(data, "tan_neg", 1, BigFloat("0"), function(k, args) {
+test_data(data, "tan_neg", 1, 300, BigFloat("1.0"), function(k, args) {
     return -BigFloat.tan(-args[0])
 })

@@ -57,7 +57,7 @@ const data = [
 ]
 
 
-test_data(data, "atan_log", 0, BigFloat("0.000000000000000000000000000000001"), function(k, args) {
+test_data(data, "atan_log", 0, 1000, BigFloat("10.0"), function(k, args) {
     var arg = BigFloat("1e-100");
     for (var i = 0; i < k; ++i) {
         arg *= BigFloat("10000");
@@ -66,7 +66,7 @@ test_data(data, "atan_log", 0, BigFloat("0.000000000000000000000000000000001"), 
     return BigFloat.atan(arg)
 })
 
-test_data(data, "atan_log_neg", 0, BigFloat("0.000000000000000000000000000000001"), function(k, args) {
+test_data(data, "atan_log_neg", 0, 1000, BigFloat("10.0"), function(k, args) {
     var arg = BigFloat("1e-100");
     for (var i = 0; i < k; ++i) {
         arg *= BigFloat("10000");

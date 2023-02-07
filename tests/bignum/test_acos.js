@@ -15,6 +15,6 @@ const data = [
 ]
 
 
-test_data(data, "acos", 1, BigFloat("0"), function(k, args) {
+test_data(data, "acos", 1, 400, BigFloat("10.0"), function(k, args) {
     return BigFloat.acos(args[0])
 })

@@ -717,10 +717,10 @@ const data = [
 ]
 
 
-test_data(data, "pow", 2, BigFloat("0"), function(i, data) {
+test_data(data, "pow", 2, 1000, BigFloat("50.0"), function(i, data) {
     return BigFloat.pow(data[0], data[1])
 })
 
-test_data(data, "pow_neg", 2, BigFloat("0.000000000000000000000000000000001"), function(i, data) {
+test_data(data, "pow_neg", 2, 1000, BigFloat("50.0"), function(i, data) {
     return BigFloat("1") / BigFloat.pow(data[0], -data[1])
 })
